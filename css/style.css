@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --fundo-cinza: #F1F1F1;
+    --verde-escuro: #10340C;
+    --bege: #C5AE7B;
+    --vermelho: #8B0A0A;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: var(--fundo-cinza) !important;
+}
+
+label{
+    font-size: .7rem;
+    color: var(--verde-escuro);
+    font-weight: 500;
+}
+
+img{
+    scale: 1.2;
+}
+
+input{
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 300;
+    height: 30px;
+    border: 1px solid #000000;
+}
+
+a:hover{
+    color: var(--verde-escuro) !important;
+}
+
+.botao{
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: .7rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    width: 55%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-primario{
+    background-color: var(--verde-escuro);
+}
+
+.botao-secundario{
+    background-color: var(--bege);
+}
+
+.link{
+    color: var(--verde-escuro);
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 15%;
+    box-shadow: 0px 0px 5.5px #bfbfbf;
+    height: 70%;
+}
+
+.container-secundario{
+    display: none;
+}
+
+.container-formulario {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container-maior{
+    flex-direction: column;
+}
+
+@media (min-width: 750px){
+
+    .botao-secundario{
+        background-color: white;
+        color: var(--verde-escuro);
+        font-weight: 500;
+    }
+
+    .container-secundario{
+    background-color: var(--bege);
+    border-radius: 20px 0px 0px 20px;
+    display: block;
+    display: flex;
+    }
+
+    .container-formulario {
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    .container{
+        width: 70% !important;
+        height: 85%;
+    }
+
+    .container-maior > .botao.botao-secundario {
+        display: none;
+    }
+
+    .container-maior{
+        flex-direction: row;
+    }
+
+    img{
+        scale: 1.5;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-maior {
+        width: 60%;
+    }
+}
