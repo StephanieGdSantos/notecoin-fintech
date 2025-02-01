@@ -5,6 +5,11 @@
     --verde-escuro: #10340C;
     --bege: #C5AE7B;
     --vermelho: #8B0A0A;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
 }
 
 html, body{
