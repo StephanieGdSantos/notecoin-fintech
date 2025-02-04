@@ -5,11 +5,24 @@
     --verde-escuro: #10340C;
     --bege: #C5AE7B;
     --vermelho: #8B0A0A;
+    --dourado: #C5AE7B;
     --light: 300;
     --regular: 400;
     --medium: 500;
     --semibold: 600;
     --bold: 700;
+}
+
+h1{
+    font-weight: var(--bold) !important;
+    color: var(--verde-escuro);
+    font-size: 1rem !important;
+}
+
+h2{
+    font-weight: var(--semibold) !important;
+    color: var(--dourado);
+    font-size: 0.9rem !important;
 }
 
 html, body{

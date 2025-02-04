@@ -8,4 +8,36 @@
 
 .valor-saldo{
     font-weight: var(--semibold);
+    color: var(--verde-escuro);
+}
+
+.offcanvas.offcanvas-start{
+    width: 40% !important;
+}
+
+.navbar-expand-lg .offcanvas{
+    flex-grow: 0 !important;
+}
+
+.container-valores{
+    border-radius: 12px;
+    background-color: white;
+}
+
+.container-movimentacao label{
+    font-weight: var(--medium);
+    font-size: 0.7rem;
+}
+
+.container-resumo label{
+    font-weight: var(--medium);
+    font-size: 0.8rem;
+}
+
+.valor-previsao label{
+    color: var(--verde-escuro);
+}
+
+.valor-gastos label{
+   color: var(--vermelho)
 }
